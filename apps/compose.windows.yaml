@@ -1,0 +1,27 @@
+services:
+  web:
+    ports: !override
+      - '127.0.0.1:5174:80'
+  api:
+    ports: !override
+      - '127.0.0.1:8080:8080'
+  prometheus:
+    ports: !override
+      - '127.0.0.1:9092:9090'
+  grafana:
+    ports: !override
+      - '127.0.0.1:3001:3000'
+  mysql:
+    ports: !override
+      - '127.0.0.1:3307:3306'
+  redis:
+    ports: !override
+      - '127.0.0.1:6379:6379'
+  rabbitmq:
+    ports: !override
+      - '127.0.0.1:5672:5672'
+      - '127.0.0.1:15672:15672'
+  worker:
+    depends_on:
+      api:
+        condition: service_healthy
