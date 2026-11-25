@@ -9,11 +9,11 @@ import (
 	"sync"
 	"testing"
 
-	applicationaccount "GCFeed/internal/application/account"
-	domainaccount "GCFeed/internal/domain/account"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpaccount "GCFeed/internal/interfaces/http/account"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationaccount "FlipFeed/internal/application/account"
+	domainaccount "FlipFeed/internal/domain/account"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpaccount "FlipFeed/internal/interfaces/http/account"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

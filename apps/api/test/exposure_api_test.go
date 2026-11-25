@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	applicationexposure "GCFeed/internal/application/exposure"
-	domainexposure "GCFeed/internal/domain/exposure"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpexposure "GCFeed/internal/interfaces/http/exposure"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationexposure "FlipFeed/internal/application/exposure"
+	domainexposure "FlipFeed/internal/domain/exposure"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpexposure "FlipFeed/internal/interfaces/http/exposure"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

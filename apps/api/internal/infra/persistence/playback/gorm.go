@@ -1,8 +1,8 @@
 package infraplayback
 
 import (
-	domainplayback "GCFeed/internal/domain/playback"
-	domainvideo "GCFeed/internal/domain/video"
+	domainplayback "FlipFeed/internal/domain/playback"
+	domainvideo "FlipFeed/internal/domain/video"
 	"context"
 	"errors"
 	"strings"

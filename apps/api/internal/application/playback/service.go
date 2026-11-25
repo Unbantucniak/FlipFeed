@@ -1,7 +1,7 @@
 package applicationplayback
 
 import (
-	domainplayback "GCFeed/internal/domain/playback"
+	domainplayback "FlipFeed/internal/domain/playback"
 	"context"
 	"errors"
 	"strings"

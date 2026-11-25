@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: gcfeed
+  name: flipfeed
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-data
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   accessModes:
     - ReadWriteOnce
@@ -19,7 +19,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: redis-data
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   accessModes:
     - ReadWriteOnce
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: rabbitmq-data
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   accessModes:
     - ReadWriteOnce
@@ -43,7 +43,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: api-uploads
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   accessModes:
     - ReadWriteOnce
@@ -55,7 +55,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -76,10 +76,10 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: gcfeed-secret
+                  name: flipfeed-secret
                   key: mysql-root-password
             - name: MYSQL_DATABASE
-              value: GCFeed
+              value: FlipFeed
           volumeMounts:
             - name: mysql-data
               mountPath: /var/lib/mysql
@@ -112,7 +112,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   selector:
     app: mysql
@@ -125,7 +125,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -172,7 +172,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   selector:
     app: redis
@@ -185,7 +185,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rabbitmq
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -237,7 +237,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rabbitmq
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   selector:
     app: rabbitmq
@@ -253,7 +253,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -266,7 +266,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: gcfeed-api:latest
+          image: flipfeed-api:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
@@ -296,7 +296,7 @@ spec:
       volumes:
         - name: api-config
           secret:
-            secretName: gcfeed-secret
+            secretName: flipfeed-secret
             items:
               - key: api-config.yaml
                 path: api-config.yaml
@@ -308,7 +308,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: api
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   selector:
     app: api
@@ -321,7 +321,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: worker
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -334,10 +334,10 @@ spec:
     spec:
       containers:
         - name: worker
-          image: gcfeed-api:latest
+          image: flipfeed-api:latest
           imagePullPolicy: IfNotPresent
           command:
-            - ./gcfeed-worker
+            - ./flipfeed-worker
           volumeMounts:
             - name: api-config
               mountPath: /app/configs/config.yaml
@@ -346,7 +346,7 @@ spec:
       volumes:
         - name: api-config
           secret:
-            secretName: gcfeed-secret
+            secretName: flipfeed-secret
             items:
               - key: api-config.yaml
                 path: api-config.yaml
@@ -355,7 +355,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   replicas: 1
   selector:
@@ -368,7 +368,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: gcfeed-web:latest
+          image: flipfeed-web:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
@@ -393,7 +393,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: web
-  namespace: gcfeed
+  namespace: flipfeed
 spec:
   type: NodePort
   selector:

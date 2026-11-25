@@ -1,7 +1,7 @@
 package infracache
 
 import (
-	infraconfig "GCFeed/internal/infra/config"
+	infraconfig "FlipFeed/internal/infra/config"
 	"time"
 
 	"github.com/redis/go-redis/v9"

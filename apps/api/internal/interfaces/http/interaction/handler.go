@@ -1,9 +1,9 @@
 package interfaceshttpinteraction
 
 import (
-	applicationinteraction "GCFeed/internal/application/interaction"
-	domaininteraction "GCFeed/internal/domain/interaction"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationinteraction "FlipFeed/internal/application/interaction"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

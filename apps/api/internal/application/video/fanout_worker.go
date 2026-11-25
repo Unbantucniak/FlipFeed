@@ -1,8 +1,8 @@
 package applicationvideo
 
 import (
-	domainfeed "GCFeed/internal/domain/feed"
-	inframetrics "GCFeed/internal/infra/metrics"
+	domainfeed "FlipFeed/internal/domain/feed"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"time"
 )

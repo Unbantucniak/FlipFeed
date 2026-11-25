@@ -16,7 +16,7 @@ import (
 var (
 	HTTPRequestsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "http_requests_total",
 			Help:      "Total HTTP requests handled by the API.",
 		},
@@ -25,7 +25,7 @@ var (
 
 	HTTPRequestDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "http_request_duration_seconds",
 			Help:      "HTTP request duration in seconds.",
 			Buckets:   []float64{0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5},
@@ -35,7 +35,7 @@ var (
 
 	FeedRequestsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "feed_requests_total",
 			Help:      "Total feed requests by scene and result.",
 		},
@@ -44,7 +44,7 @@ var (
 
 	FeedRequestDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "feed_request_duration_seconds",
 			Help:      "Feed request duration in seconds by scene.",
 			Buckets:   []float64{0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5},
@@ -54,7 +54,7 @@ var (
 
 	FeedItemsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "feed_items_total",
 			Help:      "Total feed items returned by scene.",
 		},
@@ -63,7 +63,7 @@ var (
 
 	FeedCacheRequestsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "feed_cache_requests_total",
 			Help:      "Feed cache reads by cache area and result.",
 		},
@@ -72,7 +72,7 @@ var (
 
 	FeedCacheWritesTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "feed_cache_writes_total",
 			Help:      "Feed cache writes by cache area and result.",
 		},
@@ -81,7 +81,7 @@ var (
 
 	VideoUploadTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "video_upload_total",
 			Help:      "Upload requests by kind and result.",
 		},
@@ -90,7 +90,7 @@ var (
 
 	VideoUploadDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "video_upload_duration_seconds",
 			Help:      "Upload request processing duration in seconds.",
 			Buckets:   []float64{0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, 60, 120},
@@ -100,7 +100,7 @@ var (
 
 	VideoProcessingDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "video_processing_duration_seconds",
 			Help:      "Video processing step duration in seconds.",
 			Buckets:   []float64{0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, 60, 120},
@@ -110,7 +110,7 @@ var (
 
 	WorkerJobsTotal = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "worker_jobs_total",
 			Help:      "Worker jobs handled by job name and result.",
 		},
@@ -119,7 +119,7 @@ var (
 
 	WorkerJobDuration = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
-			Namespace: "gcfeed",
+			Namespace: "flipfeed",
 			Name:      "worker_job_duration_seconds",
 			Help:      "Worker job processing duration in seconds.",
 			Buckets:   []float64{0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10},

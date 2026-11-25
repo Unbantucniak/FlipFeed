@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	infraconfig "GCFeed/internal/infra/config"
-	infradatabase "GCFeed/internal/infra/database"
-	infrahttpgin "GCFeed/internal/infra/httpgin"
-	interfaceshttprouter "GCFeed/internal/interfaces/http/router"
+	infraconfig "FlipFeed/internal/infra/config"
+	infradatabase "FlipFeed/internal/infra/database"
+	infrahttpgin "FlipFeed/internal/infra/httpgin"
+	interfaceshttprouter "FlipFeed/internal/interfaces/http/router"
 )
 
 const configPath = "./configs/config.yaml"

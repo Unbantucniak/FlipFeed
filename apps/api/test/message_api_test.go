@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	applicationmessage "GCFeed/internal/application/message"
-	domainmessage "GCFeed/internal/domain/message"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpmessage "GCFeed/internal/interfaces/http/message"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationmessage "FlipFeed/internal/application/message"
+	domainmessage "FlipFeed/internal/domain/message"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpmessage "FlipFeed/internal/interfaces/http/message"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

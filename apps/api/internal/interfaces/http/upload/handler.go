@@ -1,7 +1,7 @@
 package interfaceshttpupload
 
 import (
-	inframetrics "GCFeed/internal/infra/metrics"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"bytes"
 	"context"
 	"crypto/rand"

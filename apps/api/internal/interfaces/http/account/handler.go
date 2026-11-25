@@ -1,9 +1,9 @@
 package interfaceshttpaccount
 
 import (
-	applicationaccount "GCFeed/internal/application/account"
-	domainaccount "GCFeed/internal/domain/account"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationaccount "FlipFeed/internal/application/account"
+	domainaccount "FlipFeed/internal/domain/account"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

@@ -1,9 +1,9 @@
 package interfaceshttpmessage
 
 import (
-	applicationmessage "GCFeed/internal/application/message"
-	domainmessage "GCFeed/internal/domain/message"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationmessage "FlipFeed/internal/application/message"
+	domainmessage "FlipFeed/internal/domain/message"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

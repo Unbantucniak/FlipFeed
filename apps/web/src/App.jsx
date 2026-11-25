@@ -1,8 +1,9 @@
+import './storage-migration.js';
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-const TOKEN_KEY = "gcfeed.accessToken";
-const USER_KEY = "gcfeed.user";
-const PUBLIC_PROFILE_KEY = "gcfeed.publicProfiles";
+const TOKEN_KEY = "flipfeed.accessToken";
+const USER_KEY = "flipfeed.user";
+const PUBLIC_PROFILE_KEY = "flipfeed.publicProfiles";
 const FEED_TRANSITION_MS = 320;
 const DEFAULT_PLAYBACK_CONFIG = {
   platform: "Web",
@@ -224,7 +225,7 @@ function LoginPage({ session, onNavigate }) {
 
   return (
     <main className="auth-page">
-      <section className="auth-visual" aria-label="GCFeed">
+      <section className="auth-visual" aria-label="FlipFeed">
         <div className="auth-preview">
           <img src={image.stage} alt="" />
         </div>
@@ -234,7 +235,7 @@ function LoginPage({ session, onNavigate }) {
           <div className="brand-block">
             <span className="reel-mark" aria-hidden="true" />
             <div>
-              <h1>{mode === "login" ? "登录 GCFeed" : "创建账号"}</h1>
+              <h1>{mode === "login" ? "登录 FlipFeed" : "创建账号"}</h1>
             </div>
           </div>
 
@@ -332,7 +333,7 @@ function TopNav({ user, authenticated, unreadCount, onNavigate, onLogout }) {
       <div className="top-left">
         <button className="wordmark" onClick={() => onNavigate(authenticated ? "/recommend" : "/timeline")}>
           <span className="reel-mark" aria-hidden="true" />
-          GCFeed
+          FlipFeed
         </button>
       </div>
       <div className="top-actions">

@@ -7,18 +7,18 @@ import (
 	"os/signal"
 	"syscall"
 
-	applicationembedding "GCFeed/internal/application/embedding"
-	applicationinteraction "GCFeed/internal/application/interaction"
-	applicationvideo "GCFeed/internal/application/video"
-	infracache "GCFeed/internal/infra/cache"
-	infraconfig "GCFeed/internal/infra/config"
-	infradatabase "GCFeed/internal/infra/database"
-	inframetrics "GCFeed/internal/infra/metrics"
-	inframq "GCFeed/internal/infra/mq"
-	infraembedding "GCFeed/internal/infra/persistence/embedding"
-	infrafeed "GCFeed/internal/infra/persistence/feed"
-	infrainteraction "GCFeed/internal/infra/persistence/interaction"
-	migration "GCFeed/internal/infra/persistence/migration"
+	applicationembedding "FlipFeed/internal/application/embedding"
+	applicationinteraction "FlipFeed/internal/application/interaction"
+	applicationvideo "FlipFeed/internal/application/video"
+	infracache "FlipFeed/internal/infra/cache"
+	infraconfig "FlipFeed/internal/infra/config"
+	infradatabase "FlipFeed/internal/infra/database"
+	inframetrics "FlipFeed/internal/infra/metrics"
+	inframq "FlipFeed/internal/infra/mq"
+	infraembedding "FlipFeed/internal/infra/persistence/embedding"
+	infrafeed "FlipFeed/internal/infra/persistence/feed"
+	infrainteraction "FlipFeed/internal/infra/persistence/interaction"
+	migration "FlipFeed/internal/infra/persistence/migration"
 
 	gormmysql "gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -69,9 +69,9 @@ func main() {
 	if err := startWorkers(ctx, cfg, gormDB, rabbitMQ); err != nil {
 		log.Fatalf("start workers failed: %v", err)
 	}
-	log.Println("gcfeed worker is running")
+	log.Println("flipfeed worker is running")
 	<-ctx.Done()
-	log.Println("gcfeed worker stopped")
+	log.Println("flipfeed worker stopped")
 }
 
 func startWorkers(ctx context.Context, cfg *infraconfig.Config, gormDB *gorm.DB, rabbitMQ *inframq.RabbitMQ) error {

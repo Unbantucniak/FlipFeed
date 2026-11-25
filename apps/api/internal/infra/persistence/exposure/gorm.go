@@ -1,9 +1,9 @@
 package infraexposure
 
 import (
-	domainexposure "GCFeed/internal/domain/exposure"
-	domainvideo "GCFeed/internal/domain/video"
-	infravideo "GCFeed/internal/infra/persistence/video"
+	domainexposure "FlipFeed/internal/domain/exposure"
+	domainvideo "FlipFeed/internal/domain/video"
+	infravideo "FlipFeed/internal/infra/persistence/video"
 	"context"
 	"errors"
 

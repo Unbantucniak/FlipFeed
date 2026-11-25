@@ -1,8 +1,8 @@
 package applicationembedding
 
 import (
-	applicationvideo "GCFeed/internal/application/video"
-	domainembedding "GCFeed/internal/domain/embedding"
+	applicationvideo "FlipFeed/internal/application/video"
+	domainembedding "FlipFeed/internal/domain/embedding"
 	"context"
 	"encoding/json"
 	"errors"

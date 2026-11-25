@@ -29,13 +29,13 @@ func LoadConfig(path string) (*Config, error) {
 		return nil, ErrUnmarshalConfigFailed
 	}
 
-	if secret := os.Getenv("GCFEED_JWT_SECRET"); secret != "" {
+	if secret := os.Getenv("FLIPFEED_JWT_SECRET"); secret != "" {
 		cfg.JWT.Secret = secret
 	}
 	if cfg.JWT.Secret == "" {
 		cfg.JWT.Secret = rand.Text()
 	}
-	if token := os.Getenv("GCFEED_INTERNAL_TOKEN"); token != "" {
+	if token := os.Getenv("FLIPFEED_INTERNAL_TOKEN"); token != "" {
 		cfg.Internal.Token = token
 	}
 	return cfg, nil

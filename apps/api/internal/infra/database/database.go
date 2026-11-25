@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	infraconfig "GCFeed/internal/infra/config"
+	infraconfig "FlipFeed/internal/infra/config"
 
 	_ "github.com/go-sql-driver/mysql"
 )

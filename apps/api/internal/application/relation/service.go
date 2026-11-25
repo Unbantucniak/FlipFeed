@@ -1,9 +1,9 @@
 package applicationrelation
 
 import (
-	domainfeed "GCFeed/internal/domain/feed"
-	domainmessage "GCFeed/internal/domain/message"
-	domainrelation "GCFeed/internal/domain/relation"
+	domainfeed "FlipFeed/internal/domain/feed"
+	domainmessage "FlipFeed/internal/domain/message"
+	domainrelation "FlipFeed/internal/domain/relation"
 	"context"
 	"encoding/base64"
 	"encoding/json"

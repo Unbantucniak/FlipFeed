@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	applicationplayback "GCFeed/internal/application/playback"
-	domainplayback "GCFeed/internal/domain/playback"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
-	interfaceshttpplayback "GCFeed/internal/interfaces/http/playback"
+	applicationplayback "FlipFeed/internal/application/playback"
+	domainplayback "FlipFeed/internal/domain/playback"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
+	interfaceshttpplayback "FlipFeed/internal/interfaces/http/playback"
 
 	"github.com/gin-gonic/gin"
 )

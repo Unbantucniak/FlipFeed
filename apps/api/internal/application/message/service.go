@@ -1,7 +1,7 @@
 package applicationmessage
 
 import (
-	domainmessage "GCFeed/internal/domain/message"
+	domainmessage "FlipFeed/internal/domain/message"
 	"context"
 	"encoding/base64"
 	"encoding/json"

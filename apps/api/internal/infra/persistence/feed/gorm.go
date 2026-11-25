@@ -1,10 +1,10 @@
 package infrafeed
 
 import (
-	domainfeed "GCFeed/internal/domain/feed"
-	domaininteraction "GCFeed/internal/domain/interaction"
-	domainrelation "GCFeed/internal/domain/relation"
-	domainvideo "GCFeed/internal/domain/video"
+	domainfeed "FlipFeed/internal/domain/feed"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	domainrelation "FlipFeed/internal/domain/relation"
+	domainvideo "FlipFeed/internal/domain/video"
 	"context"
 	"fmt"
 

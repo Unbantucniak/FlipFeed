@@ -1,9 +1,9 @@
 package interfaceshttpplayback
 
 import (
-	applicationplayback "GCFeed/internal/application/playback"
-	domainplayback "GCFeed/internal/domain/playback"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationplayback "FlipFeed/internal/application/playback"
+	domainplayback "FlipFeed/internal/domain/playback"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

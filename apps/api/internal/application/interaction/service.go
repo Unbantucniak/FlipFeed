@@ -1,8 +1,8 @@
 package applicationinteraction
 
 import (
-	domaininteraction "GCFeed/internal/domain/interaction"
-	domainmessage "GCFeed/internal/domain/message"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	domainmessage "FlipFeed/internal/domain/message"
 	"context"
 	"crypto/rand"
 	"encoding/base64"

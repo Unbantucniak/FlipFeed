@@ -1,8 +1,8 @@
 package applicationinteraction
 
 import (
-	domaininteraction "GCFeed/internal/domain/interaction"
-	inframetrics "GCFeed/internal/infra/metrics"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"time"
 )

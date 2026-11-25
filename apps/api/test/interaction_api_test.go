@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	applicationinteraction "GCFeed/internal/application/interaction"
-	domainaccount "GCFeed/internal/domain/account"
-	domaininteraction "GCFeed/internal/domain/interaction"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpinteraction "GCFeed/internal/interfaces/http/interaction"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationinteraction "FlipFeed/internal/application/interaction"
+	domainaccount "FlipFeed/internal/domain/account"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpinteraction "FlipFeed/internal/interfaces/http/interaction"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

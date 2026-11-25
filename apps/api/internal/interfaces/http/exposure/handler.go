@@ -1,9 +1,9 @@
 package interfaceshttpexposure
 
 import (
-	applicationexposure "GCFeed/internal/application/exposure"
-	domainexposure "GCFeed/internal/domain/exposure"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationexposure "FlipFeed/internal/application/exposure"
+	domainexposure "FlipFeed/internal/domain/exposure"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 

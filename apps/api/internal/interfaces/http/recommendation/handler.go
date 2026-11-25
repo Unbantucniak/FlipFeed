@@ -1,8 +1,8 @@
 package interfaceshttprecommendation
 
 import (
-	applicationrecommendation "GCFeed/internal/application/recommendation"
-	domainrecommendation "GCFeed/internal/domain/recommendation"
+	applicationrecommendation "FlipFeed/internal/application/recommendation"
+	domainrecommendation "FlipFeed/internal/domain/recommendation"
 	"errors"
 	"net/http"
 

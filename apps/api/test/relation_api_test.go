@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	applicationrelation "GCFeed/internal/application/relation"
-	domainfeed "GCFeed/internal/domain/feed"
-	domainrelation "GCFeed/internal/domain/relation"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
-	interfaceshttprelation "GCFeed/internal/interfaces/http/relation"
+	applicationrelation "FlipFeed/internal/application/relation"
+	domainfeed "FlipFeed/internal/domain/feed"
+	domainrelation "FlipFeed/internal/domain/relation"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
+	interfaceshttprelation "FlipFeed/internal/interfaces/http/relation"
 
 	"github.com/gin-gonic/gin"
 )

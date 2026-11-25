@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	applicationvideo "GCFeed/internal/application/video"
-	domainvideo "GCFeed/internal/domain/video"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
-	interfaceshttpvideo "GCFeed/internal/interfaces/http/video"
+	applicationvideo "FlipFeed/internal/application/video"
+	domainvideo "FlipFeed/internal/domain/video"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
+	interfaceshttpvideo "FlipFeed/internal/interfaces/http/video"
 
 	"github.com/gin-gonic/gin"
 )

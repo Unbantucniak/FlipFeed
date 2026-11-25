@@ -1,9 +1,9 @@
 package interfaceshttprelation
 
 import (
-	applicationrelation "GCFeed/internal/application/relation"
-	domainrelation "GCFeed/internal/domain/relation"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationrelation "FlipFeed/internal/application/relation"
+	domainrelation "FlipFeed/internal/domain/relation"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

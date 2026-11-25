@@ -1,9 +1,9 @@
 package applicationfeed
 
 import (
-	applicationrecommendation "GCFeed/internal/application/recommendation"
-	domainfeed "GCFeed/internal/domain/feed"
-	inframetrics "GCFeed/internal/infra/metrics"
+	applicationrecommendation "FlipFeed/internal/application/recommendation"
+	domainfeed "FlipFeed/internal/domain/feed"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"crypto/sha1"
 	"encoding/base64"

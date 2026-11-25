@@ -1,7 +1,7 @@
 package applicationexposure
 
 import (
-	domainexposure "GCFeed/internal/domain/exposure"
+	domainexposure "FlipFeed/internal/domain/exposure"
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"

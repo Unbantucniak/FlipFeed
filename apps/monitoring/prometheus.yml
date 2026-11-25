@@ -3,13 +3,13 @@ global:
   evaluation_interval: 15s
 
 scrape_configs:
-  - job_name: gcfeed-api
+  - job_name: flipfeed-api
     metrics_path: /metrics
     static_configs:
       - targets:
           - api:8080
 
-  - job_name: gcfeed-worker
+  - job_name: flipfeed-worker
     metrics_path: /metrics
     static_configs:
       - targets:

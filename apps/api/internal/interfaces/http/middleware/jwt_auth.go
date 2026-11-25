@@ -1,7 +1,7 @@
 package interfaceshttpmiddleware
 
 import (
-	infrajwt "GCFeed/internal/infra/jwt"
+	infrajwt "FlipFeed/internal/infra/jwt"
 	"crypto/subtle"
 	"net/http"
 	"strings"

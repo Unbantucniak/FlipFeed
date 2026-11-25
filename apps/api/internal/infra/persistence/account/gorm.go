@@ -1,7 +1,7 @@
 package infraaccount
 
 import (
-	domainaccount "GCFeed/internal/domain/account"
+	domainaccount "FlipFeed/internal/domain/account"
 	"context"
 	"errors"
 

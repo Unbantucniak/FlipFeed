@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	applicationvideo "GCFeed/internal/application/video"
-	domainfeed "GCFeed/internal/domain/feed"
+	applicationvideo "FlipFeed/internal/application/video"
+	domainfeed "FlipFeed/internal/domain/feed"
 )
 
 type memoryFanoutRepo struct {

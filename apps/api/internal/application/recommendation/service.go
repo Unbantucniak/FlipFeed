@@ -1,8 +1,8 @@
 package applicationrecommendation
 
 import (
-	domainembedding "GCFeed/internal/domain/embedding"
-	domainrecommendation "GCFeed/internal/domain/recommendation"
+	domainembedding "FlipFeed/internal/domain/embedding"
+	domainrecommendation "FlipFeed/internal/domain/recommendation"
 	"context"
 	"encoding/base64"
 	"encoding/json"

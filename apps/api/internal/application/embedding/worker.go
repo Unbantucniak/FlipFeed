@@ -1,8 +1,8 @@
 package applicationembedding
 
 import (
-	applicationvideo "GCFeed/internal/application/video"
-	inframetrics "GCFeed/internal/infra/metrics"
+	applicationvideo "FlipFeed/internal/application/video"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"time"
 )

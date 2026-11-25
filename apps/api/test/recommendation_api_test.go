@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	applicationfeed "GCFeed/internal/application/feed"
-	applicationrecommendation "GCFeed/internal/application/recommendation"
-	domainfeed "GCFeed/internal/domain/feed"
-	domainrecommendation "GCFeed/internal/domain/recommendation"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpfeed "GCFeed/internal/interfaces/http/feed"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
-	interfaceshttprecommendation "GCFeed/internal/interfaces/http/recommendation"
+	applicationfeed "FlipFeed/internal/application/feed"
+	applicationrecommendation "FlipFeed/internal/application/recommendation"
+	domainfeed "FlipFeed/internal/domain/feed"
+	domainrecommendation "FlipFeed/internal/domain/recommendation"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpfeed "FlipFeed/internal/interfaces/http/feed"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
+	interfaceshttprecommendation "FlipFeed/internal/interfaces/http/recommendation"
 
 	"github.com/gin-gonic/gin"
 )

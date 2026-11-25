@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	applicationfeed "GCFeed/internal/application/feed"
-	domainfeed "GCFeed/internal/domain/feed"
-	infrajwt "GCFeed/internal/infra/jwt"
-	interfaceshttpfeed "GCFeed/internal/interfaces/http/feed"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationfeed "FlipFeed/internal/application/feed"
+	domainfeed "FlipFeed/internal/domain/feed"
+	infrajwt "FlipFeed/internal/infra/jwt"
+	interfaceshttpfeed "FlipFeed/internal/interfaces/http/feed"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 
 	"github.com/gin-gonic/gin"
 )

@@ -12,7 +12,7 @@ database:
   port: 3306
   user: "root"
   password: "sealos123"
-  name: "GCFeed"
+  name: "FlipFeed"
 
 redis:
   addr: "localhost:6379"
@@ -21,13 +21,13 @@ redis:
 
 rabbitmq:
   url: "amqp://guest:guest@localhost:5672/"
-  interaction_exchange: "gcfeed.interaction"
-  action_changed_queue: "gcfeed.interaction.action_changed"
+  interaction_exchange: "flipfeed.interaction"
+  action_changed_queue: "flipfeed.interaction.action_changed"
   action_changed_routing: "interaction.action_changed"
-  video_exchange: "gcfeed.video"
-  video_published_queue: "gcfeed.video.published"
-  video_embedding_queue: "gcfeed.video.embedding"
+  video_exchange: "flipfeed.video"
+  video_published_queue: "flipfeed.video.published"
+  video_embedding_queue: "flipfeed.video.embedding"
   video_published_routing: "video.published"
-  exposure_exchange: "gcfeed.exposure"
-  view_event_recorded_queue: "gcfeed.exposure.view_event_recorded"
+  exposure_exchange: "flipfeed.exposure"
+  view_event_recorded_queue: "flipfeed.exposure.view_event_recorded"
   view_event_recorded_routing: "exposure.view_event_recorded"

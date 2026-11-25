@@ -1,11 +1,11 @@
 package infrarecommendation
 
 import (
-	domainembedding "GCFeed/internal/domain/embedding"
-	domainexposure "GCFeed/internal/domain/exposure"
-	domainrecommendation "GCFeed/internal/domain/recommendation"
-	domainvideo "GCFeed/internal/domain/video"
-	infraexposure "GCFeed/internal/infra/persistence/exposure"
+	domainembedding "FlipFeed/internal/domain/embedding"
+	domainexposure "FlipFeed/internal/domain/exposure"
+	domainrecommendation "FlipFeed/internal/domain/recommendation"
+	domainvideo "FlipFeed/internal/domain/video"
+	infraexposure "FlipFeed/internal/infra/persistence/exposure"
 	"context"
 	"encoding/json"
 	"errors"

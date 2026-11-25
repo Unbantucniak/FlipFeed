@@ -1,9 +1,9 @@
 package interfaceshttpfeed
 
 import (
-	applicationfeed "GCFeed/internal/application/feed"
-	domainfeed "GCFeed/internal/domain/feed"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationfeed "FlipFeed/internal/application/feed"
+	domainfeed "FlipFeed/internal/domain/feed"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

@@ -1,10 +1,10 @@
 package infrainteraction
 
 import (
-	domainaccount "GCFeed/internal/domain/account"
-	domaininteraction "GCFeed/internal/domain/interaction"
-	domainvideo "GCFeed/internal/domain/video"
-	infravideo "GCFeed/internal/infra/persistence/video"
+	domainaccount "FlipFeed/internal/domain/account"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	domainvideo "FlipFeed/internal/domain/video"
+	infravideo "FlipFeed/internal/infra/persistence/video"
 	"context"
 	"errors"
 	"strings"

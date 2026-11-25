@@ -1,15 +1,15 @@
 package migration
 
 import (
-	infraaccount "GCFeed/internal/infra/persistence/account"
-	infraembedding "GCFeed/internal/infra/persistence/embedding"
-	infraexposure "GCFeed/internal/infra/persistence/exposure"
-	infrafeed "GCFeed/internal/infra/persistence/feed"
-	infrainteraction "GCFeed/internal/infra/persistence/interaction"
-	inframessage "GCFeed/internal/infra/persistence/message"
-	infraplayback "GCFeed/internal/infra/persistence/playback"
-	infrarelation "GCFeed/internal/infra/persistence/relation"
-	infravideo "GCFeed/internal/infra/persistence/video"
+	infraaccount "FlipFeed/internal/infra/persistence/account"
+	infraembedding "FlipFeed/internal/infra/persistence/embedding"
+	infraexposure "FlipFeed/internal/infra/persistence/exposure"
+	infrafeed "FlipFeed/internal/infra/persistence/feed"
+	infrainteraction "FlipFeed/internal/infra/persistence/interaction"
+	inframessage "FlipFeed/internal/infra/persistence/message"
+	infraplayback "FlipFeed/internal/infra/persistence/playback"
+	infrarelation "FlipFeed/internal/infra/persistence/relation"
+	infravideo "FlipFeed/internal/infra/persistence/video"
 	"errors"
 	"time"
 

@@ -1,9 +1,9 @@
 package interfaceshttpvideo
 
 import (
-	applicationvideo "GCFeed/internal/application/video"
-	domainvideo "GCFeed/internal/domain/video"
-	interfaceshttpmiddleware "GCFeed/internal/interfaces/http/middleware"
+	applicationvideo "FlipFeed/internal/application/video"
+	domainvideo "FlipFeed/internal/domain/video"
+	interfaceshttpmiddleware "FlipFeed/internal/interfaces/http/middleware"
 	"errors"
 	"net/http"
 	"strconv"

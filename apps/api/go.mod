@@ -1,4 +1,4 @@
-module GCFeed
+module FlipFeed
 
 go 1.26.1
 

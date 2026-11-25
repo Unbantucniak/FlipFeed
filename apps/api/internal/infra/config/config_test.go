@@ -19,8 +19,8 @@ func TestSigningKeyAndInternalToken(t *testing.T) {
 		}
 		return cfg
 	}
-	t.Setenv("GCFEED_JWT_SECRET", "")
-	t.Setenv("GCFEED_INTERNAL_TOKEN", "")
+	t.Setenv("FLIPFEED_JWT_SECRET", "")
+	t.Setenv("FLIPFEED_INTERNAL_TOKEN", "")
 	first, second := load(), load()
 	if first.JWT.Secret == "" || first.JWT.Secret == second.JWT.Secret || first.Internal.Token != "" {
 		t.Fatal("expected distinct generated signing keys and an unconfigured internal token")
@@ -31,8 +31,8 @@ func TestSigningKeyAndInternalToken(t *testing.T) {
 	if cfg := load(); cfg.JWT.Secret != "from-file" || cfg.Internal.Token != "file-token" {
 		t.Fatal("file configuration not preserved")
 	}
-	t.Setenv("GCFEED_JWT_SECRET", "from-env")
-	t.Setenv("GCFEED_INTERNAL_TOKEN", "env-token")
+	t.Setenv("FLIPFEED_JWT_SECRET", "from-env")
+	t.Setenv("FLIPFEED_INTERNAL_TOKEN", "env-token")
 	if cfg := load(); cfg.JWT.Secret != "from-env" || cfg.Internal.Token != "env-token" {
 		t.Fatal("environment configuration not applied")
 	}

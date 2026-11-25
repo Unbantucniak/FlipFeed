@@ -1,9 +1,9 @@
 package infrarelation
 
 import (
-	domainaccount "GCFeed/internal/domain/account"
-	domainrelation "GCFeed/internal/domain/relation"
-	infraaccount "GCFeed/internal/infra/persistence/account"
+	domainaccount "FlipFeed/internal/domain/account"
+	domainrelation "FlipFeed/internal/domain/relation"
+	infraaccount "FlipFeed/internal/infra/persistence/account"
 	"context"
 	"errors"
 	"strings"

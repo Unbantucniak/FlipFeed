@@ -1,11 +1,11 @@
 package infracache
 
 import (
-	applicationfeed "GCFeed/internal/application/feed"
-	applicationinteraction "GCFeed/internal/application/interaction"
-	domainfeed "GCFeed/internal/domain/feed"
-	domaininteraction "GCFeed/internal/domain/interaction"
-	inframetrics "GCFeed/internal/infra/metrics"
+	applicationfeed "FlipFeed/internal/application/feed"
+	applicationinteraction "FlipFeed/internal/application/interaction"
+	domainfeed "FlipFeed/internal/domain/feed"
+	domaininteraction "FlipFeed/internal/domain/interaction"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"encoding/json"
 	"fmt"

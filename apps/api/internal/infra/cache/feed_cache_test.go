@@ -1,7 +1,7 @@
 package infracache
 
 import (
-	domaininteraction "GCFeed/internal/domain/interaction"
+	domaininteraction "FlipFeed/internal/domain/interaction"
 	"context"
 	"encoding/json"
 	"testing"

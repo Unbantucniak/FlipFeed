@@ -1,7 +1,7 @@
 package inframessage
 
 import (
-	domainmessage "GCFeed/internal/domain/message"
+	domainmessage "FlipFeed/internal/domain/message"
 	"context"
 	"errors"
 	"strings"

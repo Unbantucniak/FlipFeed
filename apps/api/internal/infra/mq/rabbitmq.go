@@ -1,11 +1,11 @@
 package inframq
 
 import (
-	applicationexposure "GCFeed/internal/application/exposure"
-	applicationinteraction "GCFeed/internal/application/interaction"
-	applicationvideo "GCFeed/internal/application/video"
-	infraconfig "GCFeed/internal/infra/config"
-	inframetrics "GCFeed/internal/infra/metrics"
+	applicationexposure "FlipFeed/internal/application/exposure"
+	applicationinteraction "FlipFeed/internal/application/interaction"
+	applicationvideo "FlipFeed/internal/application/video"
+	infraconfig "FlipFeed/internal/infra/config"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"context"
 	"encoding/json"
 	"errors"
@@ -15,15 +15,15 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
-const defaultInteractionExchange = "gcfeed.interaction"
-const defaultActionChangedQueue = "gcfeed.interaction.action_changed"
+const defaultInteractionExchange = "flipfeed.interaction"
+const defaultActionChangedQueue = "flipfeed.interaction.action_changed"
 const defaultActionChangedRouting = "interaction.action_changed"
-const defaultVideoExchange = "gcfeed.video"
-const defaultVideoPublishedQueue = "gcfeed.video.published"
-const defaultVideoEmbeddingQueue = "gcfeed.video.embedding"
+const defaultVideoExchange = "flipfeed.video"
+const defaultVideoPublishedQueue = "flipfeed.video.published"
+const defaultVideoEmbeddingQueue = "flipfeed.video.embedding"
 const defaultVideoPublishedRouting = "video.published"
-const defaultExposureExchange = "gcfeed.exposure"
-const defaultViewEventRecordedQueue = "gcfeed.exposure.view_event_recorded"
+const defaultExposureExchange = "flipfeed.exposure"
+const defaultViewEventRecordedQueue = "flipfeed.exposure.view_event_recorded"
 const defaultViewEventRecordedRouting = "exposure.view_event_recorded"
 
 var ErrEmptyRabbitMQURL = errors.New("rabbitmq url is empty")

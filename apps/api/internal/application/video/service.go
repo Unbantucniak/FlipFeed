@@ -1,7 +1,7 @@
 package applicationvideo
 
 import (
-	domainvideo "GCFeed/internal/domain/video"
+	domainvideo "FlipFeed/internal/domain/video"
 	"context"
 	"errors"
 	"strings"

@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	interfaceshttpupload "GCFeed/internal/interfaces/http/upload"
+	interfaceshttpupload "FlipFeed/internal/interfaces/http/upload"
 
 	"github.com/gin-gonic/gin"
 )

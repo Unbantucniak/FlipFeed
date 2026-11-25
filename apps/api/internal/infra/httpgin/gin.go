@@ -1,8 +1,8 @@
 package infrahttpgin
 
 import (
-	infraconfig "GCFeed/internal/infra/config"
-	inframetrics "GCFeed/internal/infra/metrics"
+	infraconfig "FlipFeed/internal/infra/config"
+	inframetrics "FlipFeed/internal/infra/metrics"
 	"net"
 	"strconv"
 

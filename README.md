@@ -1,6 +1,6 @@
-# GCFeed
+# FlipFeed
 
-GCFeed 是一个短视频 Feed 服务。用户可以上传视频、关注作者，在最新、关注、热门和推荐四个视图中浏览作品。React 播放页会预加载接下来的视频，并上报播放质量。
+FlipFeed 是一个短视频 Feed 服务。用户可以上传视频、关注作者，在最新、关注、热门和推荐四个视图中浏览作品。React 播放页会预加载接下来的视频，并上报播放质量。
 
 ## 视频发布后如何进入 Feed
 
@@ -12,7 +12,7 @@ Go 后端分为 API 和 Worker 两个进程。API 使用 Gin 处理登录、上�
 
 ## 启动
 
-安装带 Compose 插件的 Docker。在 Windows 上可以直接运行 [start-gcfeed.cmd](start-gcfeed.cmd)。脚本会启动容器，检查首页和最新流接口，然后打开浏览器。运行 [stop-gcfeed.cmd](stop-gcfeed.cmd) 可停止服务。
+安装带 Compose 插件的 Docker。在 Windows 上可以直接运行 [start-flipfeed.cmd](start-flipfeed.cmd)。脚本会启动容器，检查首页和最新流接口，然后打开浏览器。运行 [stop-flipfeed.cmd](stop-flipfeed.cmd) 可停止服务。
 
 使用默认 Compose 配置时，从仓库根目录启动服务。
 
@@ -33,7 +33,7 @@ docker compose -f apps/docker-compose.yml up -d --build
 curl "http://127.0.0.1:8080/api/feed-items?scene=timeline&limit=10"
 ```
 
-响应中的 `items` 是当前页的视频。若 `has_more` 为真，把 `next_cursor` 作为下一次请求的 `cursor` 参数。Grafana 的 **GCFeed Overview** 面板可以查看 Feed 的 P95 延迟、缓存命中率和 Worker 任务成功率。
+响应中的 `items` 是当前页的视频。若 `has_more` 为真，把 `next_cursor` 作为下一次请求的 `cursor` 参数。Grafana 的 **FlipFeed Overview** 面板可以查看 Feed 的 P95 延迟、缓存命中率和 Worker 任务成功率。
 
 使用默认 Compose 配置时，在仓库根目录查看日志或停止容器。
 
@@ -44,9 +44,9 @@ docker compose -f apps/docker-compose.yml stop
 
 ## 服务配置
 
-默认 Compose 端口绑定到本机。API 启动时生成 JWT 签名密钥。要让登录状态跨重启生效，请设置固定的 `GCFEED_JWT_SECRET`。调用需要内部鉴权的接口时，通过 `GCFEED_INTERNAL_TOKEN` 配置调用方和 API 共用的令牌。
+默认 Compose 端口绑定到本机。API 启动时生成 JWT 签名密钥。要让登录状态跨重启生效，请设置固定的 `FLIPFEED_JWT_SECRET`。调用需要内部鉴权的接口时，通过 `FLIPFEED_INTERNAL_TOKEN` 配置调用方和 API 共用的令牌。
 
-使用 [Kubernetes 部署清单](apps/deploy.yaml) 时，先在 `gcfeed` 命名空间创建 `gcfeed-secret`，包含 `mysql-root-password` 和 `api-config.yaml` 两个键。配置文件的结构见 [容器配置](apps/api/configs/config.docker.yaml)，其中的数据库密码应与 Secret 一致，并为各个 API 副本设置相同的 JWT 签名密钥。
+使用 [Kubernetes 部署清单](apps/deploy.yaml) 时，先在 `flipfeed` 命名空间创建 `flipfeed-secret`，包含 `mysql-root-password` 和 `api-config.yaml` 两个键。配置文件的结构见 [容器配置](apps/api/configs/config.docker.yaml)，其中的数据库密码应与 Secret 一致，并为各个 API 副本设置相同的 JWT 签名密钥。
 
 ## 开发与测试
 
